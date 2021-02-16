@@ -1,24 +1,52 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# テーブル設計
 
-Things you may want to cover:
+## users テーブル
 
-* Ruby version
+| Column   | Type   | Options     |
+| -------- | ------ | ----------- |
+| name     | string | null: false |
+| email    | string | null: false |
+| password | string | null: false |
 
-* System dependencies
+### Association
 
-* Configuration
+- has_many :word_users
+- has_many :words, through: word_users
+- has_many :scores
 
-* Database creation
+## words テーブル
 
-* Database initialization
+| Column   | Type   | Options     |
+| -------- | ------ | ----------- |
+| eng_word | string | null: false |
+| meaning  | string | null: false |
 
-* How to run the test suite
+### Association
 
-* Services (job queues, cache servers, search engines, etc.)
+- has_many :word_users
+- has_many :users, through: word_users
 
-* Deployment instructions
+## word_users テーブル
 
-* ...
+| Column | Type       | Options                        |
+| ------ | ---------- | ------------------------------ |
+| user   | references | null: false, foreign_key: true |
+| word   | references | null: false, foreign_key: true |
+
+### Association
+
+- belongs_to :word
+- belongs_to :user
+
+## scores テーブル
+
+| Column     | Type       | Options                        |
+| ---------- | ---------- | ------------------------------ |
+| test_score | integer    |                                |
+| user       | references | null: false, foreign_key: true |
+
+### Association
+
+- belongs_to :user
