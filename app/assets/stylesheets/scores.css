@@ -1,0 +1,97 @@
+/* top_bar */
+.top{
+  background-color: beige;
+  height: 10vh;
+}
+.top_bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+}
+
+.title{
+  font-size: 25px;
+  padding: 0 20px;
+  background-color: crimson;
+}
+
+.log_inout{
+  background-color: blueviolet;
+  display: flex;
+  padding-right: 30px;
+  width: 30vw;
+  height: 10vh;
+  align-items: flex-end;
+}
+
+.log_in{
+  font-size: 18px;
+  padding-left: 10px;
+  text-decoration: none;
+}
+.log_out{
+  font-size: 18px;
+  padding-left: 30px;
+  text-decoration: none;
+}
+
+/* top_bar */
+/* bottom */
+.mains{
+  display: flex;
+}
+
+/* side_bar */
+.side{
+  background-color: cornflowerblue;
+  width: 20vw;
+  height: 90vh;
+}
+
+.side_bar{
+  padding: 0 20px;
+}
+
+.hello_message{
+  padding: 20px 0 40px;
+}
+
+.hello_top{
+  font-size: 18px;
+}
+.hello_name{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.month_day{
+  font-size: 15px;
+}
+/* side_bar */
+/* main_index */
+.main{
+  background-color: cornsilk;
+  width: 80vw;
+  padding: 20px;
+}
+
+.word_index{
+  font-size: 20px;
+  background-color: violet;
+  margin: 5px 50vw 10px 0;
+}
+
+.word_test{
+  font-size: 20px;
+  background-color: rgb(21, 94, 57);
+  margin: 5px 50vw 10px 0;
+}
+
+.user_scores{
+  font-size: 20px;
+  background-color: rgb(6, 78, 145);
+  margin: 5px 50vw 10px 0;
+}
+/* main_index */
+/* bottom */
