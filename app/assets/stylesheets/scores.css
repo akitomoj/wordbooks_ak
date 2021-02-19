@@ -1,6 +1,6 @@
 /* top_bar */
 .top{
-  background-color: beige;
+  background-color: whitesmoke;
   height: 10vh;
 }
 .top_bar{
@@ -17,7 +17,6 @@
 }
 
 .log_inout{
-  background-color: blueviolet;
   display: flex;
   padding-right: 30px;
   width: 30vw;
@@ -26,13 +25,29 @@
 }
 
 .log_in{
-  font-size: 18px;
   padding-left: 10px;
+}
+
+.log_in_text{
+  font-size: 18px;
   text-decoration: none;
 }
+
 .log_out{
-  font-size: 18px;
   padding-left: 30px;
+}
+
+.log_out_text{
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.registration_edit{
+  padding-left: 30px;
+}
+
+.registration_text{
+  font-size: 18px;
   text-decoration: none;
 }
 
