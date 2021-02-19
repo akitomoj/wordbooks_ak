@@ -4,10 +4,13 @@
   </div>
   <div class="log_inout">
     <div class="log_in">
-    log in
+    <%= link_to "ログイン", new_user_session_path, class: "log_in_text" %>
     </div>
     <div class="log_out">
-    log out
+    <%= link_to "ログアウト", destroy_user_session_path, class: "log_out_text", method: :delete %>
+    </div>
+    <div class="registration_edit">
+    <%= link_to "ユーザー編集", edit_user_registration_path, class: "registration_text" %>
     </div>
   </div>
 </div>
