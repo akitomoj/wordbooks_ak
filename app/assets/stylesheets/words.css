@@ -91,7 +91,7 @@
   padding: 20px;
 }
 
-.word_index{
+.words_new{
   background-color: violet;
   margin: 5px 50vw 10px 0;
 }
@@ -101,16 +101,22 @@
   text-decoration: none;
 }
 
-.word_test{
-  font-size: 20px;
-  background-color: rgb(21, 94, 57);
-  margin: 5px 50vw 10px 0;
+.words-all{
+  display: flex;
+  margin-top: 5px;
+  background-color: cadetblue;
 }
 
-.user_scores{
+.words-index{
+  font-size: 20px;
+  background-color: rgb(21, 94, 57);
+  /* margin: 5px 50vw 10px 0; */
+}
+
+.meaning-font{
   font-size: 20px;
   background-color: rgb(6, 78, 145);
-  margin: 5px 50vw 10px 0;
+  margin-left: 80px;
 }
 /* main_index */
 /* bottom */

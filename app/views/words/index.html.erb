@@ -1,0 +1,24 @@
+<div class="words-form">
+  <div class="top">
+    <%= render "scores/top_bar"%>
+  </div>
+  <div class="mains">
+    <div class="side">
+    <%= render partial: "scores/side_bar", locals: {weekday: @week_day} %>
+    </div>
+    <div class="main">
+      <div class="words_new">
+      <%= link_to "単語の新規登録をする", "#", class: "word_index_text" %>
+      </div>
+      <div class="words-all">
+        <div class="words-index">
+        ここに単語
+        <%= link_to "単語の編集をする", "#" %>
+        </div>
+        <div class="meaning-font">
+        ここに意味
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
