@@ -5,6 +5,6 @@ Rails.application.routes.draw do
 
   root to: "scores#index"
   resources :scores, only: [:index, :show]
-  resources :words
+  resources :words, except: [:show]
 
 end

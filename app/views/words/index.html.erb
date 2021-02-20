@@ -27,6 +27,12 @@
               <div class="wordsall_text">
                 <%= word.meaning %>
               </div>
+              <div class="wordsall_edit">
+                <%= link_to "編集", edit_word_path(word.id) %>
+              </div>
+              <div class="wordsall_delete">
+                <%= link_to "削除", word_path(word.id), method: :delete %>
+              </div>
             </div>
           <% end %>
 

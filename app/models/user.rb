@@ -6,7 +6,7 @@ class User < ApplicationRecord
 
   validates :nickname, presence: true
 
-  has_many :word_users
+  has_many :word_users, dependent: :destroy
   has_many :words, through: :word_users
   # has_many :scores
 

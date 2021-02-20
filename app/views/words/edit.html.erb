@@ -1,0 +1,32 @@
+<div class="words-form">
+  <div class="top">
+    <%= render "scores/top_bar"%>
+  </div>
+  <div class="mains">
+    <div class="side">
+    <%= render partial: "scores/side_bar", locals: {weekday: @week_day} %>
+    </div>
+    <div class="main">
+      <div class="words_new">
+      新規登録
+      </div>
+      <div class="words_form_all">
+        <%= form_with model: @word, url: word_path(@word.id), local: true do |form| %>
+          <div class="form_words_text">
+            <div class="form_words_label">
+              英単語（1 wordで）
+            </div>
+            <%= form.text_field :eng_word %>
+          </div>
+          <div class="form_words_text">
+            <div class="form_words_label">
+              意味（40字以内で）
+            </div>
+            <%= form.text_field :meaning %>
+          </div>
+          <%= form.submit "送信" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

@@ -13,7 +13,7 @@
 .title{
   font-size: 25px;
   padding: 0 20px;
-  background-color: crimson;
+  background-color: whitesmoke;
 }
 
 .log_inout{
@@ -59,7 +59,7 @@
 
 /* side_bar */
 .side{
-  background-color: cornflowerblue;
+  background-color: rgb(196, 248, 224);
   width: 20vw;
   height: 90vh;
 }
@@ -86,13 +86,13 @@
 /* side_bar */
 /* main_index */
 .main{
-  background-color: cornsilk;
+  background-color: whitesmoke;
   width: 80vw;
   padding: 20px;
 }
 
 .words_new{
-  background-color: violet;
+  /* background-color: violet; */
   margin: 5px 50vw 10px 0;
 }
 
@@ -103,11 +103,11 @@
 
 .words-all{
   margin-top: 5px;
-  background-color: cadetblue;
+  /* background-color: cadetblue; */
 }
 
 .words-index{
-  background-color: rgb(21, 94, 57);
+  /* background-color: rgb(21, 94, 57); */
   /* margin: 5px 0 10px; */
   height: 50px;
   width: 50vw;
@@ -118,28 +118,39 @@
 .wordsall_text{
   width: 20vw;
   font-size: 20px;
-  background-color: rgb(191, 13, 207);
+  /* background-color: rgb(191, 13, 207); */
   margin-right: 30px;
+}
+
+.wordsall_edit{
+  font-size: 10px;
+  /* background-color: rgb(207, 162, 13); */
+  margin-right: 5px;
+}
+
+.wordsall_delete{
+  font-size: 10px;
+  /* background-color: rgb(58, 51, 27); */
 }
 
 .wordsall_text_top{
   width: 20vw;
   font-size: 15px;
-  background-color: rgb(207, 91, 13);
+  /* background-color: rgb(207, 91, 13); */
   margin-right: 30px;
 }
 
 .meaning-font{
   width:20vw;
   font-size: 20px;
-  background-color: rgb(6, 78, 145);
+  /* background-color: rgb(6, 78, 145); */
   margin-left: 80px;
 }
 /* main_index */
 /* main_new */
 .words_form_all{
   margin-top: 5px;
-  background-color: cadetblue;
+  /* background-color: cadetblue; */
 }
 
 .form_words_text{
@@ -147,7 +158,7 @@
 }
 
 .form_words_label{
-  background-color: lavender;
+  /* background-color: lavender; */
   font-size: 18px;
 }
 

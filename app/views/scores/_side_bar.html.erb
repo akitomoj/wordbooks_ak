@@ -2,11 +2,11 @@
   <div class="hello_message">
     <div class="hello_top">
       <% if Time.new.hour > 5 && Time.new.hour < 12 %>
-        おはよう
+        おはようございます。
       <% elsif Time.new.hour >= 12 && Time.new.hour < 19 %>
-        こんにちは
+        こんにちは！
       <% else %>
-        こんばんは
+        こんばんは。
       <% end %>
     </div>
     <div class="hello_name">
@@ -14,6 +14,6 @@
     </div>
   </div>
   <div class="month_day">
-    今日は<%= Time.new.month %>月<%= Time.new.day %>日<%= weekday %>曜日です
+    今日は <%= Time.new.month %>月 <%= Time.new.day %>日 (<%= weekday %>)です。
   </div>
 </div>
