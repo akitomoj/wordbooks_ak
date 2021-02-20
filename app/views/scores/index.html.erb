@@ -4,17 +4,17 @@
   </div>
   <div class="mains">
     <div class="side">
-      <%= render "side_bar"%>
+      <%= render partial: "side_bar", locals: {weekday: @week_day} %>
     </div>
     <div class="main">
       <div class="word_index">
-      単語閲覧・登録
+      <%= link_to "単語閲覧・登録", words_path, class: "word_index_text" %>
       </div>
       <div class="word_test">
-      単語１０問テスト
+      <%= link_to "単語１０問テスト", "#", class: "word_index_text" %>
       </div>
       <div class="user_scores">
-      個人スコア
+      <%= link_to "個人スコア", "#", class: "word_index_text" %>
       </div>
     </div>
   </div>

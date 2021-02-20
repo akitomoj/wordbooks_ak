@@ -1,0 +1,42 @@
+<div class="words-form">
+  <div class="top">
+    <%= render "scores/top_bar"%>
+  </div>
+  <div class="mains">
+    <div class="side">
+    <%= render partial: "scores/side_bar", locals: {weekday: @week_day} %>
+    </div>
+    <div class="main">
+      <div class="words_new">
+      <%= link_to "単語の新規登録をする", new_word_path, class: "word_index_text" %>
+      </div>
+      <div class="words-all">
+        <div class="words-index">
+          <div class="wordsall_text_top">
+            英単語
+          </div>
+          <div class="wordsall_text_top">
+            日本語訳
+          </div>
+        </div>
+          <% @word.each do |word| %>
+            <div class="words-index">
+              <div class="wordsall_text">
+                <%= word.eng_word %>
+              </div>
+              <div class="wordsall_text">
+                <%= word.meaning %>
+              </div>
+              <div class="wordsall_edit">
+                <%= link_to "編集", edit_word_path(word.id) %>
+              </div>
+              <div class="wordsall_delete">
+                <%= link_to "削除", word_path(word.id), method: :delete %>
+              </div>
+            </div>
+          <% end %>
+
+      </div>
+    </div>
+  </div>
+</div>
