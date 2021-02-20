@@ -8,16 +8,28 @@
     </div>
     <div class="main">
       <div class="words_new">
-      <%= link_to "単語の新規登録をする", "#", class: "word_index_text" %>
+      <%= link_to "単語の新規登録をする", new_word_path, class: "word_index_text" %>
       </div>
       <div class="words-all">
         <div class="words-index">
-        ここに単語
-        <%= link_to "単語の編集をする", "#" %>
+          <div class="wordsall_text_top">
+            英単語
+          </div>
+          <div class="wordsall_text_top">
+            日本語訳
+          </div>
         </div>
-        <div class="meaning-font">
-        ここに意味
-        </div>
+          <% @word.each do |word| %>
+            <div class="words-index">
+              <div class="wordsall_text">
+                <%= word.eng_word %>
+              </div>
+              <div class="wordsall_text">
+                <%= word.meaning %>
+              </div>
+            </div>
+          <% end %>
+
       </div>
     </div>
   </div>
