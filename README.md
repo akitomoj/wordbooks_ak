@@ -44,7 +44,7 @@
 
 | Column     | Type       | Options                        |
 | ---------- | ---------- | ------------------------------ |
-| test_score | integer    |                                |
+| test_score | integer    | null: false                    |
 | user       | references | null: false, foreign_key: true |
 
 ### Association

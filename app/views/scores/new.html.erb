@@ -1,0 +1,35 @@
+<div class="words-form">
+  <div class="top">
+    <%= render "scores/top_bar"%>
+  </div>
+  <div class="mains">
+    <div class="side">
+      <%= render partial: "scores/side_bar", locals: {weekday: @week_day} %>
+    </div>
+    <div class="words-all">
+      <div class="words-index">
+        <div class="wordsall_text_top">
+          英単語
+        </div>
+        <div class="wordsall_text_top">
+          日本語訳
+        </div>
+      </div>
+        <% @word.each do |word| %>
+          <div class="words-index">
+            <div class="wordsall_text">
+              <%= word.eng_word %>
+            </div>
+            <div class="wordsall_text">
+              <%= word.meaning %>
+            </div>
+            <div class="wordsall_text">
+              <input type="button" value="button" id="xxx">
+            </div>
+          </div>
+        <% end %>
+
+    </div>
+    
+  </div>
+</div>

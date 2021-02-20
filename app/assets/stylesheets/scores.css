@@ -11,9 +11,14 @@
 }
 
 .title{
-  font-size: 25px;
   padding: 0 20px;
-  background-color: crimson;
+  background-color: whitesmoke;
+}
+
+.title_text{
+  font-size: 25px;
+  color: rgb(22, 0, 0);
+  text-decoration: none;
 }
 
 .log_inout{
@@ -113,4 +118,72 @@
   margin: 5px 50vw 10px 0;
 }
 /* main_index */
+/* main_new */
+.words-all{
+  margin-top: 5px;
+  /* background-color: cadetblue; */
+}
+
+.words-index{
+  /* background-color: rgb(21, 94, 57); */
+  /* margin: 5px 0 10px; */
+  height: 50px;
+  width: 50vw;
+  display: flex;
+  align-items: center;
+}
+
+.wordsall_text{
+  width: 20vw;
+  font-size: 20px;
+  /* background-color: rgb(191, 13, 207); */
+  margin-right: 30px;
+}
+
+.wordsall_edit{
+  font-size: 10px;
+  /* background-color: rgb(207, 162, 13); */
+  margin-right: 5px;
+}
+
+.wordsall_delete{
+  font-size: 10px;
+  /* background-color: rgb(58, 51, 27); */
+}
+
+.wordsall_text_top{
+  width: 20vw;
+  font-size: 15px;
+  /* background-color: rgb(207, 91, 13); */
+  margin-right: 30px;
+}
+
+.meaning-font{
+  width:20vw;
+  font-size: 20px;
+  /* background-color: rgb(6, 78, 145); */
+  margin-left: 80px;
+}
+/* main_index */
+/* main_new */
+.words_form_all{
+  margin-top: 5px;
+  /* background-color: cadetblue; */
+}
+
+.form_words_text{
+  background-color: khaki;
+}
+
+.form_words_label{
+  /* background-color: lavender; */
+  font-size: 18px;
+}
+
+input[type="text"] {
+  width: 300px;
+  height: 40px;
+}
+
+/* main_new */
 /* bottom */

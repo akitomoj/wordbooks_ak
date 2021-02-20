@@ -11,9 +11,14 @@
 }
 
 .title{
-  font-size: 25px;
   padding: 0 20px;
   background-color: whitesmoke;
+}
+
+.title_text{
+  font-size: 25px;
+  color: rgb(22, 0, 0);
+  text-decoration: none;
 }
 
 .log_inout{

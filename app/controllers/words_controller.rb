@@ -61,13 +61,3 @@ class WordsController < ApplicationController
       @week_day = ["日", "月", "火", "水", "木", "金", "土"][Time.new.wday]
     end
 end
-
-# def item_params
-#   params.require(:item).permit(:image, :name, :detail, :category_id, :condition_id, :fee_burdened_id, :prefecture_id, :shipping_date_id, :price, :tag_name).merge(user_id: current_user.id)
-# end
-
-
-
-# def word_find
-#   @item = Item.find(params[:id])
-# end
